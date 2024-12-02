@@ -1,0 +1,47 @@
+/* Desplazamiento de la imagen y formulario a la izquierda */
+.image-col,
+.form-col {
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;  /* Centra verticalmente */
+  justify-content: center;  /* Centra horizontalmente */
+}
+
+.shift-left {
+  transform: translateX(-20%); /* Ajusta el porcentaje según sea necesario */
+}
+
+/* Animación de deslizamiento del formulario */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(10);
+  }
+}
+
+/* Botón con efecto de brillo */
+.glow-on-hover {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.glow-on-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: all 0.7s ease;
+}
+
+.glow-on-hover:hover::before {
+  left: 0%;
+}

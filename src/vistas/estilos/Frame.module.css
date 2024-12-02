@@ -1,0 +1,255 @@
+.groupIcon {
+    width: 152px;
+    position: relative;
+    height: 149.2px;
+}
+.vectorIcon {
+    width: 14px;
+    position: relative;
+    height: 11px;
+}
+.elegirArchivo {
+    display: block; /* Asegura que el texto esté visible */
+    color: #000; /* Asegura un color visible */
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.editar {
+    display: block; /* Asegura que el texto esté visible */
+    color: #ffffff; /* Asegura un color visible */
+    font-family: inherit;
+    font-size: inherit;
+}
+.vectorIcon1 {
+    width: 14px;
+    position: relative;
+    height: 13px;
+}
+.vectorGroup {
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    gap: 7px;
+}
+.vectorGroup2 {
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: #ffffff;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    gap: 7px;
+}
+.lizetJazminOlvera {
+    align-self: stretch;
+    position: relative;
+    line-height: 25px;
+}
+.postulante {
+    align-self: stretch;
+    position: relative;
+    font-size: 15px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.lizetJazminOlveraGonzlezParent {
+    width: 223px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.groupParent {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 400px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+.datosPersonalesWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.lizetJazminWrapper {
+    align-self: stretch;
+    border-radius: 10px;
+    background-color: #f1efef;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.69);
+}
+.nombreParent {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 17px;
+}
+.instanceParent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 18px 62px;
+    text-align: left;
+    font-size: 18px;
+}
+.frameDiv {
+    width: 664px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+}
+.editarPerfil {
+    position: relative;
+    line-height: 25px;
+    white-space: pre-wrap;
+}
+
+.frameContainer {
+    width: 700px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 55px;
+    text-align: justify;
+    font-size: 20px;
+}
+.vectorParent {
+    width: 200px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    cursor: pointer;
+}
+.frameGroup {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 125px;
+}
+.editarContrasea {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 25px;
+}
+.instanceGroup {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirmarContraseaParent {
+    width: 300px;
+    height: 87px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.frameParent1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 18px;
+}
+.editarPerfilWrapper {
+    border-radius: 10px;
+    background-color: #171616;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: -3%;
+}
+.editarContraseaWrapper {
+    border-radius: 10px;
+    background-color: #171616;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    text-align: justify;
+    color: #fff;
+}
+.editarContraseaParent {
+    width: 700px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 33px;
+    font-size: 18px;
+}
+.frameParent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 69px;
+    text-align: left;
+    font-size: 16px;
+    color: #000;
+    font-family: Inter;
+}
+

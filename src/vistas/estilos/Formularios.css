@@ -1,0 +1,309 @@
+
+/* Contenedor principal */
+.vacante-container {
+    font-family: Arial, sans-serif;
+}
+
+.section-title{
+    color:#000000 ;
+    font-weight: bold; 
+}
+
+/* Header */
+.vacante-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background-color: #000000;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.perfil-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.admin-text {
+    font-size: 18px;
+}
+
+/* Navegación fija */
+.vacante-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: calc(100% - 60px);
+    width: 150px;
+    background-color: #000000;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.vacante-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.vacante-nav a:hover {
+    background-color: #444;
+}
+
+/* Contenido principal */
+.vacante-body {
+    margin-top: 60px;
+    margin-left: 150px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.vacante-content {
+    width: 100%;
+    max-width: 1200px; /* Ajusta el ancho máximo */
+    display: grid;
+    grid-template-columns: fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vacante-content h2 {
+    grid-column: span 2; /* Título ocupa toda la fila */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.vacante-content h3 {
+    grid-column: span 2; /* Subtítulo ocupa toda la fila */
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Grupos de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botones */
+.vacante-actions {
+    grid-column: span 2; /* Ocupa ambas columnas */
+    text-align: center;
+    margin-top: 20px;
+}
+
+.agregar-btn,
+.editar-btn {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.agregar-btn:hover,
+.editar-btn:hover {
+    background-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vacante-content {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .vacante-actions {
+        text-align: center;
+    }
+}
+
+.vacante-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+  }
+  
+  .column-left, .column-right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .vacante-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+ /* Estilos de Formularios */
+.formularios-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Alinea los formularios hacia arriba */
+  padding: 20px;
+  height: 100vh;  /* Ocupa toda la altura de la pantalla */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.formularios-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Hace que se adapten a pantallas pequeñas */
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.formulario-card {
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+
+/* Efecto al pasar el ratón */
+.formulario-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
+}
+
+.formulario-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formulario-card p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Asegura que las tarjetas sean pequeñas pero legibles */
+.formulario-card {
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 250px; /* Limita el tamaño máximo de cada tarjeta */
+  box-sizing: border-box;
+}
+
+/* Estilos modal*/
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px;
+}
+
+.modal-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+}
+
+
+  
